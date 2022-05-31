@@ -1,0 +1,446 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>Tổng quan về hệ thống sát hạch trực tuyến (Online Testing)</title>
+  <metadata>
+  <md:content-id>m30812</md:content-id><md:title>Tổng quan về hệ thống sát hạch trực tuyến (Online Testing)</md:title>
+  <md:abstract>Chương này đề cập đến khái niệm về hệ thống sát hạch trực tuyến, các thành phần cơ bản  và các kiểu câu hỏi trong hệ thống sát hạch trực tuyến. Chương này cũng tìm hiểu các hình thức sát hạch CNTT truyền thống, vấn đề sát hạch CNTT sử dụng trắc nghiệm, các ưu và nhược điểm của hình thức sát hạch này. Sau khi khảo sát và phân tích các hệ sát hạch trực tuyến trong và ngoài nước, các sản phẩm phần mềm sát hạch trực tuyến nguồn mở và chuẩn ngân hàng câu hỏi sát hạch trực tuyến, chúng tôi đưa ra những nhận xét đánh giá làm cơ sở cho việc phát triển một hệ thống sát hạch trực tuyến kiến thức và kỹ năng CNTT độc lập với hệ thống e-Learning.</md:abstract>
+  <md:uuid>1be76689-7b37-4f3e-b1b7-7a588dd9c1d1</md:uuid>
+</metadata>
+
+<content>
+    <section id="id-0136846758425">
+      <title>Định nghĩa hệ thống sát hạch trực tuyến</title>
+      <para id="id3202042">Một hệ thống sát hạch trực tuyến luôn gồm hai thành phần quan trọng là CSDL ngân hàng câu hỏi và các chức năng quản lý, phân phát bài thi thông qua mạng Intranet/Internet. Ngân hàng câu hỏi được xem là phần nội dung của hệ thống, trong đó các câu hỏi được phân loại theo môn học hoặc theo chủ đề, rồi được tập hợp lại trong CSDL đặt ở máy chủ. Các chức năng quản lý ngoài nhiệm vụ quản lý toàn bộ các đối tượng tham gia hệ thống như thí sinh, giáo viên... còn có nhiệm vụ tổ chức những câu hỏi được rút ra từ ngân hàng thành bài thi và phân phối cho thí sinh thông qua trình duyệt web, đồng thời phân tích các phương án trả lời và hiển thị kết quả bài thi của thí sinh đó. Trong một số hệ thống sát hạch trực tuyến, các thành phần của hệ thống có thể được sử dụng như những phân hệ độc lập như phân hệ tạo câu hỏi (Authoring Tool), phân hệ quản lý câu hỏi (Questions Bank), phân hệ tổ chức và phân phối bài sát hạch (Delivery System). Các phân hệ này có thể hoạt động độc lập, đặc biệt là phân hệ tạo câu hỏi (do cần huy động nhiều tài nguyên trên máy tính đơn nên thường được cài đặt vào máy tính đơn thay vì hoạt động trên nền web) hoặc có thể kết nối với nhau thành một hệ thống nhất khi tổ chức kỳ thi [12].</para>
+    </section>
+    <section id="id-059646713922">
+      <title>Các kiểu câu hỏi trong hệ thống sát hạch trực tuyến</title>
+      <section id="id-897821141995">
+        <title>Các kiểu câu hỏi trong đặc tả QTI</title>
+        <para id="id3202130">Có rất nhiều kiểu câu hỏi có thể được sử dụng trong các hệ thống sát hạch trắc nghiệm, đặc biệt là sát hạch trắc nghiệm trực tuyến. IMS Global đưa ra một đặc tả có tên IMS QTI (Question and Test Interoperability- khả năng tương tác giữa câu hỏi và bài trắc nghiệm) cho các câu hỏi và bài trắc nghiệm [12]. Các câu hỏi này được thể hiện dưới các tệp XML (eXtensible Markup Language) mô tả dữ liệu và do đó dễ dàng được chia sẻ dữ liệu giữa các hệ thống. Trong phạm vi phần này, ta chỉ xét các kiểu câu hỏi do IMS đưa ra:</para>
+        <section id="id-721615260789">
+          <title>Câu hỏi Đơn lựa chọn</title>
+          <list id="id3202160" list-type="bulleted">
+            <item>Mô tả: Câu hỏi có nhiều phương án trả lời, trong đó có duy nhất một phương án đúng.</item>
+          </list>
+          <figure id="id3202179">
+            <media id="id5586571" alt=""><image src="../../media/graphics1.png" mime-type="image/png" height="146" width="577"/></media>
+          </figure>
+        </section>
+        <section id="id-60265913868">
+          <title>Câu hỏi Đa lựa chọn</title>
+          <list id="id3202212" list-type="bulleted">
+            <item>Mô tả: Câu hỏi có nhiều phương án trả lời, trong đó có từ 2 phương án đúng trở lên.</item>
+          </list>
+          <figure id="id3202230">
+            <media id="id7835932" alt=""><image src="../../media/graphics2.png" mime-type="image/png" height="169" width="564"/></media>
+          </figure>
+        </section>
+        <section id="id-00930964895591">
+          <title>Câu hỏi Sắp xếp trật tự</title>
+          <list id="id3202263" list-type="bulleted">
+            <item>Mô tả: Câu hỏi cho trước một tập hợp các đối tượng và yêu cầu thí sinh sắp xếp các đối tượng đó theo một trật tự nhất định.</item>
+          </list>
+          <figure id="id3202284">
+            <media id="id1171068328021" alt=""><image src="../../media/graphics3.png" mime-type="image/png" height="94" width="590"/></media>
+          </figure>
+        </section>
+        <section id="id-114836947345">
+          <title>Câu hỏi Tương tác kết hợp</title>
+          <list id="id3202317" list-type="bulleted">
+            <item>Mô tả: Câu hỏi đưa ra một tập hợp các đối tượng và yêu cầu thí sinh kết hợp các đối tượng với nhau thành từng cặp (Câu hỏi này yêu cầu hệ thống phải hỗ trợ tương tác đồ họa kéo thả)</item>
+          </list>
+          <figure id="id3202340">
+            <media id="id1171068695825" alt=""><image src="../../media/graphics4.png" mime-type="image/png" height="277" width="475"/></media>
+          </figure>
+        </section>
+        <section id="id-203612207684">
+          <title>Câu hỏi Ghép cặp</title>
+          <list id="id3202372" list-type="bulleted">
+            <item>Mô tả: Câu hỏi đưa ra một bảng gồm 2 tập đối tượng. Thí sinh có nhiệm vụ là ghép đôi các lựa chọn từ tập nguồn với các lựa chọn ở tập đích. </item>
+          </list>
+          <figure id="id3202394">
+            <media id="id1171067539171" alt=""><image src="../../media/graphics5.png" mime-type="image/png" height="163" width="590"/></media>
+          </figure>
+        </section>
+        <section id="id-814530986092">
+          <title>Câu hỏi Ghép cặp điền vào ô trống</title>
+          <list id="id3202427" list-type="bulleted">
+            <item>Mô tả: Nội dung câu hỏi đưa ra có các ô trống cần bổ sung thông tin, phía dưới là một bảng chứa các phương án có thể lựa chọn. Thí sinh cần lựa chọn các phương án tương ứng cho từng ô trống trong bảng một cách phù hợp.</item>
+          </list>
+          <figure id="id3202451">
+            <media id="id7907684" alt=""><image src="../../media/graphics6.png" mime-type="image/png" height="205" width="590"/></media>
+          </figure>
+        </section>
+        <section id="id-274642473794">
+          <title>Câu hỏi Lựa chọn nội tuyến</title>
+          <list id="id3202484" list-type="bulleted">
+            <item>Mô tả: Điền vào chỗ trống trong đoạn văn bản bằng cách lựa chọn đáp án từ một danh sách cho trước.</item>
+          </list>
+          <figure id="id3202504">
+            <media id="id1171076379795" alt=""><image src="../../media/graphics7.png" mime-type="image/png" height="103" width="590"/></media>
+          </figure>
+        </section>
+        <section id="id-113137505529">
+          <title>Câu hỏi Nhập văn bản</title>
+          <list id="id3202536" list-type="bulleted">
+            <item>Mô tả: dạng tương tác nhập văn bản trong đó yêu cầu thí sinh phải tự đưa ra câu trả lời bằng cách gõ câu trả lời vào chỗ trống. </item>
+          </list>
+          <figure id="id3202557">
+            <media id="id1171067413076" alt=""><image src="../../media/graphics8.png" mime-type="image/png" height="116" width="504"/></media>
+          </figure>
+          <list id="id3202581" list-type="bulleted">
+            <item>Chú ý: Từ nhập vào phải chính xác so với đáp án và có thể phân biệt chữ hoa chữ thường. </item>
+          </list>
+        </section>
+        <section id="id-0644367413585">
+          <title>Câu hỏi Nhập văn bản mở rộng</title>
+          <list id="id3202606" list-type="bulleted">
+            <item>Mô tả: Đây là dạng tương tác yêu cầu nhập văn bản mở rộng. Câu trả lời không phải là một từ chính xác mà là một đoạn văn bản. </item>
+          </list>
+          <figure id="id3202626">
+            <media id="id2992934" alt=""><image src="../../media/graphics9.png" mime-type="image/png" height="209" width="590"/></media>
+          </figure>
+        </section>
+        <section id="id-95471058537">
+          <title>Câu hỏi Chọn từ</title>
+          <list id="id3202659" list-type="bulleted">
+            <item>Mô tả: Trong nội dung câu hỏi có một số từ/cụm từ được đánh dấu đậm để thí sinh lựa chọn. </item>
+          </list>
+          <figure id="id3305240">
+            <media id="id1171066172698" alt=""><image src="../../media/graphics10.png" mime-type="image/png" height="161" width="590"/></media>
+          </figure>
+        </section>
+        <section id="id-926460880369">
+          <title>Câu hỏi Chọn điểm cho trước</title>
+          <list id="id3305274" list-type="bulleted">
+            <item>Mô tả: Câu hỏi này cũng tương tự dạng câu hỏi chọn từ, tuy nhiên, thí sinh phải lựa chọn các điểm đã được đánh dấu trên một hình ảnh (Câu hỏi này yêu cầu hệ thống phải hỗ trợ tương tác đồ họa bắt vị trí chuột)</item>
+          </list>
+          <figure id="id3305298">
+            <media id="id1171068576658" alt=""><image src="../../media/graphics11.png" mime-type="image/png" height="391" width="590"/></media>
+          </figure>
+        </section>
+        <section id="id-773731875873">
+          <title>Câu hỏi Chọn điểm không cho trước</title>
+          <list id="id3305333" list-type="bulleted">
+            <item>Mô tả: Ứng với mỗi tình huống đặt ra, câu trả lời của thí sinh là một điểm duy nhất được thí sinh đánh dấu trên hình vẽ . (Câu hỏi này yêu cầu hệ thống phải hỗ trợ tương tác đồ họa bắt vị trí chuột)</item>
+          </list>
+          <figure id="id3305357">
+            <media id="id4376146" alt=""><image src="../../media/graphics12.png" mime-type="image/png" height="479" width="590"/></media>
+          </figure>
+          <list id="id3305380" list-type="bulleted">
+            <item>Chú ý: Do không thể yêu cầu thí sinh nhấn chuột chính xác vào vị trí được hỏi, người ta xác định một khoảng không gian cho câu trả lời đúng bằng cách hoặc khoanh một vòng tròn với bán kính là 8 pixel và tâm là toạ độ điểm trả lời chính xác hoặc kẻ một ô chữ nhật bao trọn lấy khu vực đáp án đúng.</item>
+          </list>
+        </section>
+        <section id="id-669404782041">
+          <title>Câu hỏi Sắp xếp trật tự đồ họa</title>
+          <list id="id3305419" list-type="bulleted">
+            <item>Mô tả: tương tác sắp xếp trật tự đồ họa. Dựa trên các điểm có sẵn trên một hình vẽ/bản đồ, thí sinh phải sắp xếp các điểm đó theo một trật tự nhất định theo yêu cầu của câu hỏi đề ra. (Câu hỏi này yêu cầu hệ thống phải hỗ trợ tương tác đồ họa kéo thả)</item>
+          </list>
+          <figure id="id3305443">
+            <media id="id1171065955115" alt=""><image src="../../media/graphics13.png" mime-type="image/png" height="512" width="590"/></media>
+          </figure>
+          <list id="id3305467" list-type="bulleted">
+            <item>Chú ý: các lựa chọn được biểu diễn như các điểm cho sẵn trên hình ảnh.</item>
+          </list>
+        </section>
+        <section id="id-190922855151">
+          <title>Câu hỏi Liên kết đồ họa</title>
+          <list id="id3305492" list-type="bulleted">
+            <item>Mô tả: Câu hỏi yêu cầu liên kết các đối tượng đồ họa với nhau theo một trình tự cụ thể. Các đối tượng đồ họa lựa chọn được thể hiện dưới dạng điểm cho sẵn. (Câu hỏi này yêu cầu hệ thống phải hỗ trợ tương tác đồ họa kéo thả và vẽ hình)</item>
+          </list>
+          <figure id="id3305517">
+            <media id="id8648939" alt=""><image src="../../media/graphics14.png" mime-type="image/png" height="534" width="590"/></media>
+          </figure>
+        </section>
+        <section id="id-762782035094">
+          <title>Câu hỏi Ghép cặp điền vào ô trống đồ họa</title>
+          <list id="id3305551" list-type="bulleted">
+            <item>Mô tả: dạng tương tác ghép cặp điền vào ô trống đồ họa. (Câu hỏi này yêu cầu hệ thống phải hỗ trợ tương tác đồ họa kéo thả)</item>
+          </list>
+          <figure id="id3305572">
+            <media id="id2187166" alt=""><image src="../../media/graphics15.png" mime-type="image/png" height="244" width="368"/></media>
+          </figure>
+        </section>
+        <section id="id-160514950961">
+          <title>Câu hỏi Định vị đối tượng</title>
+          <list id="id3305606" list-type="bulleted">
+            <item>Mô tả: tương tác dạng định vị đối tượng</item>
+          </list>
+          <figure id="id3305622">
+            <media id="id1171068743800" alt=""><image src="../../media/graphics16.png" mime-type="image/png" height="554" width="520"/></media>
+          </figure>
+          <list id="id3305646" list-type="bulleted">
+            <item>Chú ý: câu hỏi cũng yêu cầu chức năng kéo thả, và có nhiều tương tác vì phải đặt các đối tượng vào các vị trí khác nhau trên ảnh.</item>
+          </list>
+        </section>
+        <section id="id-518647080325">
+          <title>Câu hỏi Sử dụng con trượt</title>
+          <list id="id3305671" list-type="bulleted">
+            <item>Mô tả: Câu hỏi có tương tác sử dụng đối tượng đồ họa dạng con trượt. </item>
+          </list>
+          <figure id="id3305689">
+            <media id="id1171067449930" alt=""><image src="../../media/graphics17.png" mime-type="image/png" height="141" width="590"/></media>
+          </figure>
+        </section>
+      </section>
+    </section>
+    <section id="id-973161249055">
+      <title>Khả năng chuyển một số câu hỏi trong chuẩn QTI sang dạng Câu hỏi đơn lựa chọn:</title>
+      <section id="id-753058367787">
+        <title>Câu hỏi sắp xếp trật tự</title>
+        <figure id="id3305739">
+          <media id="id1171067498202" alt=""><image src="../../media/graphics18.png" mime-type="image/png" height="91" width="590"/></media>
+        </figure>
+        <para id="id3305763">-&gt; có thể chuyển đổi thành</para>
+        <figure id="id3305772">
+          <media id="id1171065768915" alt=""><image src="../../media/graphics19.png" mime-type="image/png" height="173" width="590"/></media>
+        </figure>
+        <list id="id3305796" list-type="bulleted">
+          <item>Nhận xét: Trong trường hợp này và các trường hợp tiếp dưới đây, câu hỏi thuộc chuẩn QTI thường đưa ra nhiều khả năng lựa chọn cho thí sinh hơn câu hỏi chuyển đổi.</item>
+        </list>
+      </section>
+      <section id="id-904152593575">
+        <title>Câu hỏi tương tác kết hợp</title>
+        <figure id="id3305824">
+          <media id="id5505552" alt=""><image src="../../media/graphics20.png" mime-type="image/png" height="160" width="590"/></media>
+        </figure>
+        <para id="id3305848">-&gt; có thể chuyển đổi thành</para>
+        <figure id="id3305856">
+          <media id="id1634471" alt=""><image src="../../media/graphics21.png" mime-type="image/png" height="158" width="551"/></media>
+        </figure>
+      </section>
+      <section id="id-846905185743">
+        <title>Câu hỏi Ghép cặp</title>
+        <figure id="id3305892">
+          <media id="id6412139" alt=""><image src="../../media/graphics22.png" mime-type="image/png" height="244" width="415"/></media>
+        </figure>
+        <para id="id3305916">-&gt; có thể chuyển đổi thành</para>
+        <figure id="id3305925">
+          <media id="id8784134" alt=""><image src="../../media/graphics23.png" mime-type="image/png" height="163" width="541"/></media>
+        </figure>
+      </section>
+      <section id="id-13207293829">
+        <title>Câu hỏi Ghép cặp điền vào ô trống</title>
+        <figure id="id3305961">
+          <media id="id7047724" alt=""><image src="../../media/graphics24.png" mime-type="image/png" height="207" width="590"/></media>
+        </figure>
+        <para id="id3305985">-&gt; có thể chuyển đổi thành</para>
+        <figure id="id3305993">
+          <media id="id1171067324683" alt=""><image src="../../media/graphics25.png" mime-type="image/png" height="190" width="474"/></media>
+        </figure>
+      </section>
+      <section id="id-721615545494">
+        <title>Câu hỏi Lựa chọn nội tuyến</title>
+        <figure id="id3306029">
+          <media id="id1171065721967" alt=""><image src="../../media/graphics26.png" mime-type="image/png" height="82" width="590"/></media>
+        </figure>
+        <para id="id3306053">-&gt; có thể chuyển đổi thành</para>
+        <figure id="id3306062">
+          <media id="id1171065840074" alt=""><image src="../../media/graphics27.png" mime-type="image/png" height="201" width="550"/></media>
+        </figure>
+      </section>
+      <section id="id-274691575677">
+        <title>Câu hỏi Nhập văn bản</title>
+        <figure id="id3306098">
+          <media id="id1171070383304" alt=""><image src="../../media/graphics28.png" mime-type="image/png" height="119" width="504"/></media>
+        </figure>
+        <para id="id3306121">-&gt; có thể chuyển đổi thành</para>
+        <figure id="id3306130">
+          <media id="id1171067384607" alt=""><image src="../../media/graphics29.png" mime-type="image/png" height="220" width="401"/></media>
+        </figure>
+      </section>
+      <section id="id-213773546491">
+        <title>Câu hỏi Chọn từ</title>
+        <figure id="id3306166">
+          <media id="id1171066177301" alt=""><image src="../../media/graphics30.png" mime-type="image/png" height="159" width="590"/></media>
+        </figure>
+        <para id="id3306189">-&gt; có thể chuyển đổi thành</para>
+        <figure id="id3306198">
+          <media id="id1171066650368" alt=""><image src="../../media/graphics31.png" mime-type="image/png" height="178" width="590"/></media>
+        </figure>
+      </section>
+      <section id="id-766526068141">
+        <title>Câu hỏi Chọn điểm cho trước</title>
+        <figure id="id3306234">
+          <media id="id1171066670400" alt=""><image src="../../media/graphics32.png" mime-type="image/png" height="391" width="590"/></media>
+        </figure>
+        <para id="id3306258">-&gt; Có thể chuyển đổi thành</para>
+        <figure id="id3306266">
+          <media id="id1171068364130" alt=""><image src="../../media/graphics33.png" mime-type="image/png" height="471" width="590"/></media>
+        </figure>
+      </section>
+    </section>
+    <section id="id-583542482413">
+      <title>Các dạng câu hỏi trong một số hệ thống sát hạch trắc nghiệm CNTT điển hình</title>
+      <para id="id3306303">Như đã thống kê ở trên, có 17 dạng câu hỏi được IMS đề xuất và trong số 17 dạng câu hỏi này ta đã chỉ ra khả năng có thể quy về dạng Câu hỏi đơn lựa chọn (với phạm vi lựa chọn bị thu hẹp lại) của các dạng còn lại. Trong phần nội dung dưới đây, ta tiếp tục khảo sát các dạng câu hỏi trong trong các hệ thống sát hạch trắc nghiệm CNTT điển hình và cũng rút ra nhận xét rằng: Các dạng Đơn lựa chọn, Đa lựa chọn hoặc Nhập văn bản là các dạng câu hỏi được sử dụng nhiều hơn cả. Các minh họa dưới đây chỉ ra điều này.</para>
+      <section id="id-471508562631">
+        <title>Câu hỏi trong trong hệ thống ReviewNet</title>
+        <figure id="id3306344">
+          <media id="id1171067491204" alt=""><image src="../../media/graphics34.png" mime-type="image/png" height="372" width="419"/></media>
+        </figure>
+        <list id="id3306368" list-type="enumerated">
+          <item>Câu hỏi đơn lựa chọn kiểm tra lý thuyết trong ReviewNet</item>
+        </list>
+        <figure id="id3306382">
+          <media id="id1171067324799" alt=""><image src="../../media/graphics35.png" mime-type="image/png" height="412" width="418"/></media>
+        </figure>
+        <list id="id3306406" list-type="enumerated">
+          <item>Câu hỏi đơn lựa chọn kiểm tra kiến thức thực hành trong ReviewNet</item>
+        </list>
+      </section>
+      <section id="id-794731751496">
+        <title>Câu hỏi trong hệ thống Question Tools</title>
+        <figure id="id3306433">
+          <media id="id1171066647937" alt=""><image src="../../media/graphics36.png" mime-type="image/png" height="314" width="490"/></media>
+        </figure>
+        <list id="id3306457" list-type="enumerated">
+          <item>Câu hỏi nhập từ vào ô trống trong QuestionTools</item>
+        </list>
+      </section>
+      <section id="id-668343520387">
+        <title>Câu hỏi trong hệ thống IgiveTest</title>
+        <figure id="id3306482">
+          <media id="id4410874" alt=""><image src="../../media/graphics37.png" mime-type="image/png" height="374" width="496"/></media>
+        </figure>
+        <list id="id3306506" list-type="enumerated">
+          <item>Câu hỏi đa lựa chọn trong IgiveTest</item>
+        </list>
+      </section>
+      <section id="id-0321875009109">
+        <title>Câu hỏi trong hệ thống TestKing</title>
+        <figure id="id3306531">
+          <media id="id2210886" alt=""><image src="../../media/graphics38.png" mime-type="image/png" height="367" width="590"/></media>
+        </figure>
+        <list id="id3306555" list-type="enumerated">
+          <item>Câu hỏi đơn lựa chọn trong TestKing</item>
+        </list>
+        <para id="id3306567">Ngoài ra có thể kể đến rất nhiều các hệ thống sát hạch CNTT khác như Enlight, QuestionMark… cũng tập trung sử dụng các dạng câu hỏi này trong hệ thống sát hạch của mình.</para>
+      </section>
+    </section>
+    <section id="id-667899248238">
+      <title>Các hình thức sát hạch CNTT theo lối truyền thống</title>
+      <para id="id3306596">Trước khi nghiên cứu xây dựng một hệ thống sát hạch CNTT trực tuyến, ta cần tìm hiểu xem từ trước tới nay, các bài sát hạch CNTT thường được tiến hành theo hình thức nào. Sau đây là một số hình thức sát hạch CNTT truyền thống thường được áp dụng:</para>
+      <list id="id3306616" list-type="bulleted">
+        <item>Tự luận: Trong một khoảng thời gian quy định, học viên trả lời câu hỏi bằng cách viết ra tờ giấy thi nội dung trả lời cho các yêu cầu đề bài tương ứng. Hình thức thi này chủ yếu áp dụng cho thi lý thuyết, ví dụ như phân tích thiết kế đánh giá thuật toán, xây dựng và mô tả hệ thống…</item>
+        <item>Sát hạch trắc nghiệm lý thuyết dùng giấy thi: Học viên được phát đề thi gồm các câu hỏi trắc nghiệm lý thuyết trên tờ giấy thi. Học viên làm bài bằng cách đánh dấu chọn hoặc điền phương án trả lời của mình vào các ô trả lời in sẵn tương ứng với từng câu hỏi trên giấy thi. Hình thức thi này có khả năng áp dụng cho nhiều môn học CNTT, tuy nhiên cũng chỉ kiểm tra được kiến thức lý thuyết của học viên.</item>
+        <item>Thực hành trên máy, chấm điểm tại chỗ: Học viên được phát phiếu thi với đề thi là các bài thực hành và được chuẩn bị trong một khoảng thời gian quy định. Sau khi hết thời gian, giáo viên xem kết quả thực hành và kiểm tra quy trình và cách thức làm bài trên máy của học viên. Giáo viên có thể ra thêm câu hỏi vấn đáp để kiểm tra kiến thức, sau đó cho điểm tại chỗ và ký vào phiếu thi. Hình thức thi này chú trọng kỹ năng thực hành, thường được áp dụng khi kiểm tra kỹ năng lập trình thực hiện bài toán của học viên. </item>
+        <item>Thực hành trên máy, chấm điểm sau: Học viên được phát phiếu thi với đề thi là các bài thực hành và làm bài trong một khoảng thời gian quy định. Kết quả làm bài của thí sinh phải để trong một thư mục đặt tên bằng số báo danh của thí sinh và ghi lưu vào nơi quy định. Các bài thi sẽ được đánh số lại và chuyển ra thiết bị lưu trữ chỉ đọc (read-only) trước khi chuyển cho giáo viên chấm thi. Hình thức này cũng tương tự như hình thức 3, chỉ khác là giáo viên chấm điểm dựa trên kết quả làm bài của học sinh, không dựa trên quá trình hỏi đáp trực tiếp.</item>
+      </list>
+      <para id="id3306764">Trong số các hình thức sát hạch CNTT truyền thống nêu trên, kết quả của các hình thức 1, 3 và 4 phụ thuộc nhiều vào người chấm, khó có sự khách quan và thống nhất tuyệt đối, chưa kể thời gian tổ chức sát hạch lâu, lại đòi hỏi nhiều giáo viên tham gia nếu số thí sinh lớn. Hình thức 2 không phụ thuộc vào giáo viên chấm bài nhưng lại phụ thuộc vào phương tiện làm bài (trên giấy) nên khó có thể kiểm tra được kiến thức về kỹ năng thực hành. Hình thức sát hạch trực tuyến có thể khắc phục được những bất lợi này. </para>
+      <para id="id3306794">Trong quá trình chuyển đổi hình thức sát hạch sang trắc nghiệm trực tuyến, ta thấy mỗi câu hỏi trong hình thức sát hạch theo lối truyền thống nêu trên đều có thể chuyển đổi thành một hoặc một số dạng câu hỏi thuộc 17 dạng câu hỏi do IMS đề xuất. Mặc dù vậy, việc chuyển đổi từ hình thức sát hạch CNTT theo lối truyền thống sang sát hạch trắc nghiệm CNTT trực tuyến cũng có những ưu và nhược điểm nhất định.</para>
+    </section>
+    <section id="id-436751779313">
+      <title>Ưu và nhược điểm của phương pháp sát hạch trắc nghiệm trực tuyến</title>
+      <section id="id-198093448626">
+        <title>Ưu điểm:</title>
+        <list id="id3306849" list-type="bulleted">
+          <item>Tùy thuộc vào cách đặt vấn đề và cách ra câu hỏi của người ra đề mà mỗi câu hỏi trắc nghiệm đều có khả năng đánh giá trình độ kiến thức và mức độ hiểu biết khác nhau của thí sinh. Một câu hỏi có thể chỉ từ đơn giản như kiểm tra khả năng nhớ bài của thí sinh đến phức tạp hơn như kiểm tra khả năng ứng dụng kiến thức vào thực tế với một tình huống cho sẵn, và ở mức độ cao hơn, là đánh giá một thông tin giả định nào đó. </item>
+          <item>Sát hạch trắc nghiệm là hình thức thi khách quan. Thí sinh chỉ cần chọn một câu trả lời trong số các phương án đề xuất và người chấm sẽ không phải cân nhắc theo chủ quan của mình về những lỗi của thí sinh như trong thi tự luận (như lỗi chính tả, cách hành văn nghèo nàn, hoặc những kiểu trả lời vòng vo, chung chung...). Do việc chấm thi khách quan, không phụ thuộc vào cá nhân nào nên kết quả của sát hạch trắc nghiệm ít có sai sót. Thí sinh ít khi phải khiếu nại, hoặc nếu có thì việc phúc tra cũng nhanh chóng và dễ dàng.</item>
+          <item>Việc chấm điểm trong hình thức sát hạch này được tiến hành rất nhanh. Bất kể dùng phương tiện gì để triển khai thì một kỳ sát hạch trắc nghiệm cũng được tiến hành nhanh hơn so với các kỳ sát hạch theo hình thức truyền thống. Ngoài ra, chúng ta còn có thể thống kê các số liệu của kỳ thi một cách nhanh chóng và dễ dàng. Đặc biệt là với ngân hàng đề thi và công cụ máy tính, việc tiến hành sát hạch có thể tổ chức vào bất kỳ thời gian và địa điểm nào, và kết quả sát hạch có thể được công bố ngay sau khi kết thúc bài thi. </item>
+          <item>Việc chọn đề thi được tiến hành mềm dẻo và có thể theo nhiều tiêu chí khác nhau. Nó có thể được sử dụng để đánh giá chất lượng giảng dạy của giáo viên. Ví dụ, qua kết quả sát hạch của một lớp, ta có thể đánh giá được chất lượng của các phần trong một môn học, chất lượng giảng dạy của giáo viên. Kết quả thi là một đánh giá mang tính phản hồi về hiệu quả của việc dạy và học. </item>
+          <item>Nội dung sát hạch có thể gồm nhiều câu hỏi nhỏ bao trùm toàn bộ chương trình học, đòi hỏi thí sinh phải học đều, hiểu rõ. Điều này tránh được tình trạng "học tủ", "học theo đề mẫu". </item>
+          <item>Thứ tự các câu hỏi cũng như thứ tự các phương án trả lời luôn được thay đổi, hơn nữa các bài thi đều có khống chế thời gian nên có thể hạn chế hiện tượng gian lận trong quá trình thi. Rủi ro trong việc rò rỉ các câu hỏi thi trong ngân hàng câu hỏi cũng như xác xuất để đoán mò các câu trả lời đúng trong một kỳ sát hạch như thế này là rất thấp. </item>
+        </list>
+      </section>
+      <section id="id-220839118304">
+        <title>Nhược điểm:</title>
+        <list id="id3306996" list-type="bulleted">
+          <item>Để soạn được một bộ đề sát hạch trắc nghiệm (tập hợp thành một ngân hàng đề) là một công việc khó và đòi hỏi phải mất nhiều thời gian. Không dễ gì có được những câu hỏi tốt với những lựa chọn thích hợp. Đặc biệt là trong các câu chọn lựa, câu nhiễu và câu chọn đúng phải tương xứng với nhau và không sai biệt nhau nhiều theo mức độ hiểu biết của thí sinh. </item>
+          <item>Việc ấn định khoảng thời gian cần thiết và hợp lý cho thí sinh để hoàn tất một sát hạch trắc nghiệm cũng là một vấn đề cần tính đến. Bởi vì chúng ta phải cân nhắc câu hỏi sao cho thí sinh có đủ thời gian để đọc được hết phần câu hỏi và câu lựa chọn rồi kịp thời suy nghĩ, phán đoán hoặc tính toán để có phương án chọn lựa đúng. </item>
+          <item>Một số người cho rằng sát hạch trắc nghiệm khó đánh giá khả năng tư duy, sáng tạo của người học ở mức độ cao, nhất là các môn học thiên về văn chương, triết học, xã hội học, v.v... Tuy nhiên, cũng cần hiểu rằng, mục đích chính của kiểm tra trình độ hoặc thi tuyển là nhằm đặt ra những "ngưỡng" với các thang bậc khác nhau để sắp xếp, chọn lựa chứ không nhằm tìm kiếm những cá nhân có ý tưởng xuất chúng. Việc phát hiện nhân tài không phải chỉ trong ngày một ngày hai, mà nó đòi hỏi phải theo dõi, kiểm nghiệm và thử thách trong suốt quá trình đào tạo. </item>
+          <item>Trong một phạm vi nhất định, việc thay đổi thói quen tổ chức thi từ tự luận sang trắc nghiệm có thể gây khó chịu cho một số người dạy và cả người coi thi. Nếu hoàn toàn tuyệt đối hóa hình thức thi bằng trắc nghiệm nhiều lựa chọn (hoặc hình thức khác) trong tất cả kỳ thi- từ thi học kỳ đến thi tuyển sinh, thi tốt nghiệp- sẽ tạo một thói quen học tập cứng nhắc, học sinh ít rèn luyện khả năng viết, kỹ năng lý luận, kỹ xảo thực hành,... vốn vẫn là ưu thế của hình thức thi tự luận, thi thực hành, hay thi vấn đáp.</item>
+        </list>
+      </section>
+    </section>
+    <section id="id-522845334861">
+      <title>Các hệ thống sát hạch trực tuyến trong và ngoài nước</title>
+      <section id="id-13733387738">
+        <title>Các hệ thống sát hạch trực tuyến trên thế giới</title>
+        <para id="id3307129">Các phần mềm sát hạch trực tuyến (kiến thức và kỹ năng CNTT, ngoại ngữ...) đã được một số công ty trên thế giới nghiên cứu, phát triển và áp dụng cho lĩnh vực của mình một cách hiệu quả. Trong lĩnh vực CNTT, tiêu biểu là hệ thống sát hạch chứng chỉ “Sử dụng máy tính cấp Quốc tế” – ICDL (International Computer Driving Licence) của tổ chức ICDLAP và hệ thống đào tạo và sát hạch kỹ năng quản trị mạng máy tính của Cisco System. Hầu hết các hệ thống kể trên đã được phát triển theo hướng dựa trên nền web, cho phép cài đặt hệ thống trên một máy chủ và bài thi được phân phát tới các máy tính còn lại có kết nối. </para>
+        <para id="id3307160">Hệ thống sát hạch chứng chỉ ICDL trực tuyến, trước đây do công ty Thụy Điển Enlight đảm nhiệm (www.enlight.net). Hệ thống có khả năng phân phát bài thi tới các máy trạm thông qua mạng Internet. Nó quản lý thời gian làm bài của thí sinh và đánh giá kiến thức, kỹ năng CNTT của thí sinh thông qua 2 dạng câu hỏi: Câu hỏi trắc nghiệm một câu bốn phương án (trong đó có duy nhất một phương án đúng) và câu hỏi có sử dụng hình ảnh minh họa tình huống thực hành (thí sinh cần nhấn chuột vào vị trí đúng). Hệ thống này của Enlight sử dụng công nghệ Java Applet để thiết kế bài thi và quản lý toàn bộ hoạt động của thí sinh ở phía máy trạm.</para>
+        <para id="id3307192">Việc Enlight sử dụng công nghệ ASP kết hợp với Java Applet đã tạo ra được một hệ thống sát hạch dựa trên nền web (đặt trên website <link url="http://www.enlight.net/">www.enlight.net</link>). Nó cho phép bất kỳ một thí sinh dự thi hợp lệ nào đều có thể tham gia sát hạch trên website. Hệ thống này hoạt động an toàn và ổn định, và hiện đã có thí sinh trên 140 quốc gia đã từng tham dự sát hạch trên hệ thống của Enlight.</para>
+        <para id="id3307238">Hệ thống đào tạo và sát hạch trực tuyến của Cisco sử dụng công nghệ Flash làm chủ đạo. Công nghệ này cho phép mô phỏng các hoạt động mạng nhằm giúp người học nhanh chóng nắm bắt kiến thức thông qua các tình huống thực hành trực quan. Trong quá trình sát hạch, công nghệ Flash được tận dụng triệt để nhằm tạo ra những câu hỏi tương tác với thí sinh cũng như quản lý tiến trình làm bài. Cisco sử dụng PHP và ColdFusion kết hợp cùng MacroMedia Flash, và nó cũng gặt hái được nhiều thành công. Hệ thống được triển khai qua mạng Internet, hoạt động an toàn, ổn định, có khả năng khôi phục trạng thái trong trường hợp rủi ro như đứt đường truyền, v.v… </para>
+      </section>
+      <section id="id-111488768165">
+        <title>Các hệ thống Sát hạch trực tuyến trong nước</title>
+        <para id="id3307280">Ở Việt Nam, trong những năm gần đây, cùng với e-Learning, sát hạch trắc nghiệm, đặc biệt là sát hạch trắc nghiệm trực tuyến cũng là vấn đề thường xuyên được đề cập tới. Các cơ sở đào tạo về CNTT như trường Đại học Bách Khoa Hà Nội, trường Đại học Công nghệ- ĐHQGHN, Học viện Bưu chính Viễn thông, Trung tâm Đào tạo và Sát hạch VITEC- Bộ Khoa học Công nghệ, Viện Công nghệ Thông tin- ĐHQGHN, trường Đại học Sư phạm Thành phố Hồ Chí Minh (TP.HCM), v.v... đã bước đầu có những nghiên cứu triển khai về sát hạch trắc nghiệm trực tuyến. Một số sản phẩm liên quan đến các hệ thống sát hạch trực tuyến được các đơn vị này xây dựng như: </para>
+        <para id="id3307320">Phần mềm sát hạch trực tuyến CmTest-112 của Viện Công nghệ Thông tin- ĐHQGHN được triển khai nhằm sát hạch kỹ năng CNTT cho các cán bộ cơ quan hành chính của nhà nước theo Đề án 112 của Chính phủ. Ngân hàng câu hỏi được xây dựng trong phần mềm này dùng cho 7 module cơ bản trong khung đào tạo của đề án, bao gồm: Cơ bản về máy tính, Hệ điều hành Windows, MS-Word, MS-Excel, Trình duyệt và thư điện tử, Cơ bản về mạng máy tính, Hệ thống thông tin tác nghiệp chính phủ. Cho đến nay, số lượt sát hạch thông qua phần mềm này lên đến hơn 60 nghìn. Ngoài ra Viện Công nghệ thông tin còn ứng dụng phương thức thi trắc nghiệm trên máy tính cho các kỳ thi học kỳ dành cho đối tượng Kỹ thuật viên Tin học của trung tâm Tin học PT trực thuộc Viện. Bên cạnh đó, trung tâm Đào tạo và Sát hạch của Viện Công nghệ Thông tin còn là một đơn vị ủy nhiệm của tổ chức ICDL AP, tiến hành sát hạch cho các đối tượng thi chứng chỉ ICDL thông qua hệ thống sát hạch của chính tổ chức này. [1]</para>
+        <para id="id3307357">Trung tâm Đào tạo và Sát hạch VITEC- Bộ Khoa học Công nghệ thông qua dự án của Nhật Bản hiện đang triển khai hệ thống Cultiva (Nhật Bản) nhằm hỗ trợ học viên ôn tập để thi chứng chỉ kỹ sư công nghệ thông tin cơ bản (FE) và chứng chỉ kỹ sư phần mềm (SE) theo tiêu chuẩn của Nhật Bản. </para>
+        <para id="id3307372">Trung tâm Công nghệ Dạy học thuộc Viện Nghiên cứu Giáo dục, Đại học Sư phạm TP.HCM cũng xây dựng một phần mềm trắc nghiệm cài đặt trên máy tính cá nhân và bước đầu đưa phần mềm này vào ứng dụng.</para>
+        <para id="id3307388">Các công ty CNTT trong nước đã bước đầu phát triển các hệ thống sát hạch trực tuyến, vừa làm phần mềm thương mại, vừa dùng để tự phát triển nhằm mục đích đào tạo nhân viên (FPT, Tinh Vân, Toàn Cầu, Tân Thế Kỷ…).</para>
+        <para id="id3307404">Nhiều trường đại học sử dụng ngay chức năng sát hạch trắc nghiệm của hệ thống e-Learning mà mình sử dụng như Moodle, Sakai hoặc tải về các sản phẩm phần mềm sát hạch nguồn mở như TCexam, EasyTest, Castle Toolkit, v.v…</para>
+      </section>
+    </section>
+    <section id="id-861255668117">
+      <title>Các phần mềm sát hạch trực tuyến nguồn mở thông dụng</title>
+      <section id="id-578906797808">
+        <title>Phần mềm TCExam (http://sourceforge.net/projects/tcexam)</title>
+        <para id="id3307441">TCExam là một phần mềm sát hạch nguồn mở viết bằng ngôn ngữ PHP với CSDL MySQL. Phần mềm có các chức năng quản lý, phân phối, lên lịch, báo cáo các bài khảo sát, câu hỏi trắc nghiệm, và các bài kiểm tra. Các kiểu câu hỏi sử dụng trong hệ thống này là 2 loại câu hỏi: đơn lựa chọn và đa lựa chọn. Hiện dự án phát triển TCExam vẫn đang trong giai đoạn hoàn thiện và phiên bản mới nhất phát hành là 4.0.005. [17] </para>
+        <figure id="id3307462">
+          <media id="id3935874" alt=""><image src="../../media/graphics39.png" mime-type="image/png" height="352" width="473"/></media>
+        </figure>
+        <list id="id3307485" list-type="enumerated">
+          <item>Màn hình quản trị câu hỏi của TCExam</item>
+        </list>
+        <figure id="id3307501">
+          <media id="id3611146" alt=""><image src="../../media/graphics40.png" mime-type="image/png" height="265" width="463"/></media>
+        </figure>
+        <list id="id3307525" list-type="enumerated">
+          <item>Màn hình bài thi của TCExam</item>
+        </list>
+      </section>
+      <section id="id-657495172362">
+        <title>Phần mềm CyberTester (http://www.sourceforge.net/cybertester/)</title>
+        <para id="id3307548">CyberTester là một phần mềm sát hạch trực tuyến nguồn mở viết bằng Jboss kết hợp với CSDL MySQL. Người dùng có thể tải về CyberTest từ sourceforge.net hoặc từ <link url="http://www.cyberdemia.com/products/cybertester.html">http://www.cyberdemia.com/products/cybertester.html</link>. CyberTester cũng sử dụng hai dạng câu hỏi là đa lựa chọn và đơn lựa chọn trong các bài sát hạch của mình. Dự án phát triển CyberTester được khởi động từ năm 2003 và hiện phiên bản mới nhất của phần mềm có tên CyberTester2, version 0.2.0. Trong phiên bản mới nhất này, các chức năng tạo mới câu hỏi trắc nghiệm cùng các thuộc tính mỗi câu hỏi đã được bổ sung, tuy nhiên phần mềm vẫn chưa hỗ trợ môi trường soạn thảo nội dung câu hỏi trên nền RTE (Rich Text Editor), chính vì vậy mà một loạt các tiện ích đi kèm như chức năng chèn ảnh minh họa cho câu hỏi, chức năng định dạng nội dung câu hỏi….hiện vẫn chưa thể thực hiện được[17]. </para>
+        <figure id="id3307608">
+          <media id="id1171068549255" alt=""><image src="../../media/graphics41.png" mime-type="image/png" height="454" width="590"/></media>
+        </figure>
+        <list id="id3307632" list-type="enumerated">
+          <item>Màn hình thêm mới câu hỏi của CyberTester</item>
+        </list>
+        <figure id="id3307650">
+          <media id="id7910180" alt=""><image src="../../media/graphics42.png" mime-type="image/png" height="318" width="477"/></media>
+        </figure>
+        <list id="id3307674" list-type="enumerated">
+          <item>Màn hình bài thi của CyberTester</item>
+        </list>
+      </section>
+      <section id="id-806482044882">
+        <title>Phần mềm PHPTestManager (http://sourceforge.net/phptestmanager/)</title>
+        <para id="id3307698">Dự án phát triển phần mềm PHPTestManager được khởi động từ 21/12/2003 và hiện tại phiên bản mới nhất đang phát hành là phiên bản 0.2.2. Phần mềm có giao diện quản trị và giao diện bài thi đơn giản, môi trường soạn thảo câu hỏi cũng không hỗ trợ RTE. Các câu hỏi sử dụng trong phần mềm là câu hỏi đơn lựa chọn và đa lựa chọn. [17]</para>
+        <figure id="id3307718">
+          <media id="id1171066809204" alt=""><image src="../../media/graphics43.png" mime-type="image/png" height="318" width="412"/></media>
+        </figure>
+        <list id="id3307743" list-type="enumerated">
+          <item>Màn hình quản trị câu hỏi của PHPTest Manager</item>
+        </list>
+      </section>
+      <section id="id-112733999042">
+        <title>Phần mềm PHPTest (http://sourceforge.net/projects/phptest/)</title>
+        <para id="id3307766">Dự án phát triển PHPTest được khởi động từ năm 2002 và hiện đã ngừng phát triển tiếp trên sourceforge. Các chức năng của PHPTest tương tự như TCExam và các câu hỏi trong PHPTest cũng bao gồm câu hỏi đa lựa chọn và đơn lựa chọn. Màn hình soạn thảo câu hỏi của PHPTest cũng chưa hỗ trợ môi trường RTE. [17]</para>
+        <figure id="id3307786">
+          <media id="id1171067555361" alt=""><image src="../../media/graphics44.jpg" mime-type="image/jpeg" height="449" width="538"/></media>
+        </figure>
+        <list id="id3307810" list-type="enumerated">
+          <item>Màn hình thêm mới câu hỏi của PHPTest</item>
+        </list>
+      </section>
+      <section id="id-50510604133">
+        <title>Phần mềm Castle Toolkit (http://www.le.ac.uk/castle/)</title>
+        <para id="id3307833">Castle là viết tắt của Computer Assisted Teaching &amp; Learning - Dạy và học với sự trợ giúp của máy tính. Phần mềm nguồn mở này giúp giáo viên có thể nhanh chóng xây dựng các câu hỏi đa lựa chọn mà không cần đến kiến thức về lập trình. Caste Toolkit đã được một số trường đại học trong và ngoài nước sử dụng, bởi ngoài tính tiện dụng của nó thì điều quan trọng đây là phần mềm miễn phí. Tuy nhiên, cũng giống như các phần mềm nguồn mở đã đề cập ở trên, các tính năng chèn đối tượng ảnh, định dạng câu hỏi…của Castle hiện vẫn chưa được hỗ trợ.[17]</para>
+      </section>
+    </section>
+    <section id="id-746494553212">
+      <title>Kết luận</title>
+      <para id="id3332533">Qua khảo sát cho thấy, câu hỏi trắc nghiệm đơn lựa chọn và đa lựa chọn được sử dụng hầu hết trong các hệ thống sát hạch trực tuyến. Mặc dù IMS đã chỉ ra có rất nhiều kiểu câu hỏi, nhưng trên thực tế, đa phần các câu hỏi đều có thể quy về một trong hai loại này. Các trường hợp khảo sát ở trên cũng đã cho thấy kể cả các hệ thống thương mại như Tesking, review, iGivetest… hay các dự án phần mềm sát hạch trực tuyến nguồn mở thông dụng cũng gần như chỉ sử dụng 2 loại câu hỏi đơn lựa chọn và đa lựa chọn cho hệ thống sát hạch của mình.</para>
+      <para id="id3332580">Trong các hệ thống sát hạch CNTT sử dụng trắc nghiệm, ngoài việc sử dụng Câu hỏi đơn lựa chọn và đa lựa chọn, nếu hệ thống sử dụng thêm dạng Câu hỏi chọn điểm không cho trước thì khuôn dạng bài sát hạch sẽ rất phù hợp với lĩnh vực CNTT (trường hợp của Enlight) [20]. Các câu hỏi đơn lựa chọn và đa lựa chọn sẽ kiểm tra kiến thức lý thuyết, trong khi câu hỏi Chọn điểm không cho trước trên màn hình tình huống sẽ kiểm tra phản xạ và kỹ năng thực hành sử dụng phần mềm. Đây là một yêu cầu hết sức cần thiết trong lĩnh vực CNTT, và yêu cầu này đòi hỏi các hệ thống sát hạch trắc nghiệm cần có nhiều dạng câu hỏi có tương tác với người sử dụng hơn nữa (các dạng kéo thả đối tượng, chọn vị trí đúng, kéo thanh trượt…). Tuy nhiên, qua khảo sát các hệ thống sát hạch trắc nghiệm CNTT ở trên, các dạng câu hỏi này còn rất ít, thậm chí là chưa có. </para>
+      <para id="id3332623">Trong trường hợp hệ thống có câu hỏi thực hành, tương tác, việc phát triển hệ thống công cụ quản lý đề thi trực tuyến cho giáo viên (Online Authoring Tools) là một bài toán cần được giải quyết bởi các công cụ này cần cho phép giáo viên dễ dàng thao tác trực tuyến trên nền web. Ngoài ra, môi trường soạn nội dung câu hỏi cần phải đươc hỗ trợ RTE. </para>
+      <para id="id3332641">Công nghệ sử dụng cho các câu hỏi tương tác trong các hệ thống trên, nếu có, là Java Applet và MacroMedia Flash.</para>
+      <para id="id3332653">Rất nhiều hệ thống sát hạch trực tuyến còn chưa chú ý đến việc đảo thứ tự các phương án trả lời cho câu hỏi trắc nghiệm (ví dụ hệ thống sát hạch lý thuyết luật giao thông), dẫn đến việc thí sinh học tủ, học vẹt, nhớ máy móc vị trí các đáp án.</para>
+      <para id="id3332670">Các module chức năng đánh giá (bao gồm chất lượng ngân hàng câu hỏi và năng lực thí sinh) hầu như chưa được áp dụng trong các hệ thống sát hạch trắc nghiệm khảo sát ở trên.
+
+</para>
+    </section><para id="element-324">Hy vọng các bạn đã có được những thông tin tổng quan về hệ thống sát hạch trực tuyến trước khi bước sang các nội dung tiếp theo.
+
+Đỗ Ngọc Minh</para>
+  </content>
+</document>
