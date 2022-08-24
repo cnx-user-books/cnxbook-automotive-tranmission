@@ -1,3 +1,31 @@
-<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="en">  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">  <md:content-id>col10738</md:content-id>  <md:title>Automotive tranmission </md:title>      <md:license url="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License 3.0</md:license>  <md:language>vi</md:language>              <md:uuid>1e1cd3b7-7d9f-4bde-84da-e7febaf9f76d</md:uuid>
-<md:slug>automotive-tranmission</md:slug>
-</metadata>  <col:content>                        <col:subcollection>        <md:title>Chương I Biến mô thủy lực </md:title>                                <col:content>                    <col:module document="m30812"/>                          </col:content>      </col:subcollection>                            <col:subcollection>        <md:title>Chương II Bộ truyền hành tinh </md:title>                                <col:content>                  </col:content>      </col:subcollection>                            <col:subcollection>        <md:title>Chương III Van điện từ </md:title>                                <col:content>                  </col:content>      </col:subcollection>                            <col:subcollection>        <md:title>Chương IV Mạch thủy lực</md:title>                                <col:content>                  </col:content>      </col:subcollection>      </col:content></col:collection>
+<?xml version="1.0"?>
+<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="en" authors="Nguyen Van Thinh">
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+    <md:content-id>col10738</md:content-id>
+    <md:title>Automotive tranmission </md:title>
+    <md:license url="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License 3.0</md:license>
+    <md:language>vi</md:language>
+    <md:uuid>1e1cd3b7-7d9f-4bde-84da-e7febaf9f76d</md:uuid>
+    <md:slug>automotive-tranmission</md:slug>
+  </metadata>
+  <col:content>
+    <col:subcollection>
+      <md:title>Ch&#x1B0;&#x1A1;ng I Bi&#x1EBF;n m&#xF4; th&#x1EE7;y l&#x1EF1;c </md:title>
+      <col:content>
+        <col:module document="m30812"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Ch&#x1B0;&#x1A1;ng II B&#x1ED9; truy&#x1EC1;n h&#xE0;nh tinh </md:title>
+      <col:content>                  </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Ch&#x1B0;&#x1A1;ng III Van &#x111;i&#x1EC7;n t&#x1EEB; </md:title>
+      <col:content>                  </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Ch&#x1B0;&#x1A1;ng IV M&#x1EA1;ch th&#x1EE7;y l&#x1EF1;c</md:title>
+      <col:content>                  </col:content>
+    </col:subcollection>
+  </col:content>
+</col:collection>
